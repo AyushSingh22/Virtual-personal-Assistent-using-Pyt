@@ -45,16 +45,16 @@ def wishme():
     #Some Gretings
     hour = datetime.datetime.now().hour
     if hour>=0 and hour<12:
-        speak("Good Morning Ma'am!")
-        print("Good Morning Ma'am!")
+        speak("Good Morning Sir")
+        print("Good Morning Sir!")
         
     elif hour>=12 and hour<18:
-        speak("Good Afternoon Ma'am!")
-        print("Good Afternoon Ma'am!")
+        speak("Good Afternoon Sir!")
+        print("Good Afternoon Sir!")
         
     elif hour>=18 and hour<24:
-        speak("Good Evening Ma'am!")
-        print("Good Evening Ma'am!")
+        speak("Good Evening Sir!")
+        print("Good Evening Sir!")
         
     speak("Spell at your service. Please tell me how can I help you today?")
 
@@ -89,7 +89,7 @@ def screenshot():
     img = pyautogui.screenshot()
     screenshotpath = r'C:\Users\abhis\OneDrive\Pictures\Screenshots.png' #use path location here
     img.save(screenshotpath)
-    speak("Done Ma'am!")
+    speak("Done Sir!")
     
 def cpu():
     usage = str(psutil.cpu_percent())
@@ -187,7 +187,7 @@ if __name__ == "__main__":
             speak("Opening...")
             wb.open('https://myclass.lpu.in/')
             
-        elif 'open WhatsAap' in query:
+        elif 'open Whatsaap' in query:
             speak("Opening...")
             wb.open('https://web.whatsapp.com/')
             
